@@ -1,0 +1,25 @@
+{
+  "name": "vercel-ai-1",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ai-sdk/google": "^0.0.52",
+    "ai": "^3.4.16",
+    "next": "14.2.15",
+    "ollama-ai-provider": "^0.15.2",
+    "react": "^18.3.1",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.2.15",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
+  }
+}
