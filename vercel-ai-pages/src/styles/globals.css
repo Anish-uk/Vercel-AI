@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* globals.css */
+
+/* Basic Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styling with a warm background */
+body {
+  font-family: "GeistSans", sans-serif;
+  background-color: #fff4e6; /* Light orange background */
+  color: #333; /* Dark text color for readability */
+  line-height: 1.6;
+}
+
+/* Chat container styling */
+.flex {
+  display: flex;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.max-w-md {
+  max-width: 28rem; /* equivalent to the max-w-md in Tailwind CSS */
+}
+
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stretch {
+  align-items: stretch;
+}
+
+/* Message bubble styling */
+.whitespace-pre-wrap {
+  white-space: pre-wrap;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+}
+
+div[data-role="user"] {
+  background-color: #ffb385; /* Light warm orange for user messages */
+  color: #5a3e1d;
+}
+
+div[data-role="ai"] {
+  background-color: #ffd1a9; /* Softer orange for AI messages */
+  color: #5a3e1d;
+}
+
+/* Input styling */
+input {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 28rem;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid #ffa500; /* Border with orange tone */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 140, 0, 0.2);
+  background-color: #fff8f0;
+}
+
+input::placeholder {
+  color: #ff9c63; /* Placeholder color in warm orange */
+}
+
+/* Form submit button */
+form {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #ff7518; /* Vibrant orange for buttons */
+  color: white;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 140, 0, 0.3);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff8c42;
+}
+
+/* Scroll styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff8c42;
+  border-radius: 8px;
+}
