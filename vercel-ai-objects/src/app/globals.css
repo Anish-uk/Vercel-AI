@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #3a3a3a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 20px;
+}
+
+.recipe-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+h1 {
+  color: #ff7f50;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.recipe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1rem;
+  color: #ff7f50;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+input:focus {
+  border-color: #ff7f50;
+}
+
+button.submit-button {
+  background-color: #ff7f50;
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.submit-button:disabled {
+  background-color: #f4a261;
+  cursor: not-allowed;
+}
+
+button.submit-button:not(:disabled):hover {
+  background-color: #e76f51;
+}
+
+.error-message {
+  color: #e76f51;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.recipe-output {
+  margin-top: 20px;
+}
+
+.recipe-output h2 {
+  color: #2a9d8f;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.recipe-output h3 {
+  font-size: 1.2rem;
+  color: #2a9d8f;
+}
+
+.ingredients-list,
+.steps-list {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.ingredients-list li,
+.steps-list li {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .recipe-container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button.submit-button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
